@@ -1,0 +1,132 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Registered.master.cs" Inherits="Registered_User_Registered" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            background-color: #000000;
+        }
+        .auto-style2 {
+            width: 287px;
+        }
+        .auto-style3 {
+            width: 966px;
+        }
+        .auto-style4 {
+            width: 1479px;
+            background-color: #C4C03C;
+        }
+        .auto-style10 {
+            width: 211px;
+            height: 48px;
+        }
+        .auto-style12 {
+            width: 212px;
+            height: 48px;
+        }
+        .auto-style13 {
+            height: 502px;
+        }
+        .auto-style14 {
+            height: 64px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" class="auto-style1">
+            <tr>
+                <td>
+                    <table cellpadding="0" cellspacing="0" class="auto-style1">
+                        <tr>
+                            <td class="auto-style2">
+                                <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/Picture/logo.jpg" Width="300px" />
+                            </td>
+                            <td class="auto-style3">
+                                <table cellpadding="0" cellspacing="0" class="auto-style1">
+                                    <tr>
+                                        <td style="text-align: center">
+                                            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="20pt" ForeColor="White" Text="POLICE CRIME PREVENTION INITIATIVES"></asp:Label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center">
+                                            <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="#DAD636" Text="ONLINE CRIME REPORT PORTAL"></asp:Label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td style="text-align: right">
+                                <asp:Image ID="Image2" runat="server" Height="152px" ImageUrl="~/Picture/smj.jpg" Width="207px" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #C4C03C">
+                    <table cellpadding="0" cellspacing="0" class="auto-style4">
+                        <tr>
+                            <td class="auto-style10" style="text-align: center">
+                                <asp:Button ID="btnHome" runat="server" BackColor="#C4C03C" BorderColor="#C4C03C" Font-Bold="True" Font-Size="12pt" ForeColor="Black"  Text="Home" OnClick="btnHome_Click" />
+                            </td>
+                            <td class="auto-style10" style="text-align: center">
+                                <asp:Button ID="btnProfile" runat="server" BackColor="#C4C03C" BorderColor="#C4C03C" Font-Bold="True" Font-Size="12pt" ForeColor="Black" Text="Profile" OnClick="btnProfile_Click" />
+                            </td>
+                            <td class="auto-style10" style="text-align: center">
+                                <asp:DropDownList ID="ddlComplaint" runat="server" AutoPostBack="True" BackColor="#C4C03C" EnableViewState="False" Font-Bold="True" Font-Size="12pt" OnSelectedIndexChanged="ddlComplaint_SelectedIndexChanged">
+                                    <asp:ListItem>Complaint</asp:ListItem>
+                                    <asp:ListItem>Add FIR</asp:ListItem>
+                                    <asp:ListItem>Withdraw FIR</asp:ListItem>
+                                    <asp:ListItem>Track Your FIR</asp:ListItem>
+                                </asp:DropDownList>
+                            </td>
+                            <td class="auto-style10" style="text-align: center">
+                                <asp:Button ID="btnFAQs" runat="server" BackColor="#C4C03C" BorderColor="#C4C03C" Font-Bold="True" Font-Size="12pt" ForeColor="Black"  Text="FAQs" OnClick="btnFAQs_Click" />
+                            </td>
+                            <td class="auto-style10" style="text-align: center">
+                                <asp:Button ID="btnFeedback" runat="server" BackColor="#C4C03C" BorderColor="#C4C03C" Font-Bold="True" Font-Size="12pt" ForeColor="Black" Text="Feedback" OnClick="btnFeedback_Click" />
+                            </td>
+                            <td class="auto-style12" style="text-align: center">
+                                <asp:Button ID="btnLogOut" runat="server" BackColor="#C4C03C" BorderColor="#C4C03C" Font-Bold="True" Font-Size="12pt" ForeColor="Black" Text="Log Out" OnClick="btnLogOut_Click" />
+                            </td>
+                            <td class="auto-style12" style="text-align: center">
+                                <asp:Button ID="btnAboutUs" runat="server" BackColor="#C4C03C" BorderColor="#C4C03C" Font-Bold="True" Font-Size="12pt" ForeColor="Black" Text="About Us" OnClick="btnAboutUs_Click" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style14" style="text-align: center">
+                    <br />
+                <asp:Label ID="lblHelpline" runat="server" Font-Size="15pt" ForeColor="#FFCCCC"></asp:Label>
+                    <br />
+                    <br />
+                    <br />
+                <asp:Label ID="lblWelcome0" runat="server" Font-Size="17pt" ForeColor="#FFCCCC">Welcome :</asp:Label>
+                <asp:Label ID="lblWelcome" runat="server" Font-Size="17pt" ForeColor="#FFCCCC"></asp:Label>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #808080" class="auto-style13">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

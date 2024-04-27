@@ -1,0 +1,7 @@
+C:\Users\Rakesh Maity\Desktop\crime\obj\Debug\net8.0\crime.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rakesh Maity\Desktop\crime\obj\Debug\net8.0\crime.AssemblyInfoInputs.cache
+C:\Users\Rakesh Maity\Desktop\crime\obj\Debug\net8.0\crime.AssemblyInfo.cs
+C:\Users\Rakesh Maity\Desktop\crime\obj\Debug\net8.0\crime.csproj.CoreCompileInputs.cache
+C:\Users\Rakesh Maity\Desktop\crime\obj\Debug\net8.0\crime.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Rakesh Maity\Desktop\crime\obj\Debug\net8.0\crime.RazorAssemblyInfo.cache
+C:\Users\Rakesh Maity\Desktop\crime\obj\Debug\net8.0\crime.RazorAssemblyInfo.cs

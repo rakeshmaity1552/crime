@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="General.master.cs" Inherits="General_User_General" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            background-color: #000000;
+        }
+        .auto-style2 {
+            width: 100%;
+            height: 51px;
+            background-color: #FF9933;
+        }
+        .auto-style3 {
+            height: 36px;
+        }
+        .auto-style4 {
+            height: 495px;
+        }
+        .auto-style5 {
+            width: 298px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" class="auto-style1">
+            <tr>
+                <td>
+                    <table cellpadding="0" cellspacing="0" class="auto-style1">
+                        <tr>
+                            <td class="auto-style5">
+                                <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/Picture/logo.jpg" Width="300px" />
+                            </td>
+                            <td>
+                                <table cellpadding="0" cellspacing="0" class="auto-style1">
+                                    <tr>
+                                        <td style="text-align: center">
+                                            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="20pt" ForeColor="White" Text="POLICE CRIME PREVENTION INITIATIVES"></asp:Label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center">
+                                            <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="#009933" Text="ONLINE CRIME REPORT PORTAL"></asp:Label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td style="text-align: right">
+                                <asp:Image ID="Image2" runat="server" Height="150px" ImageUrl="~/Picture/handcuff (2).png" Width="120px" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3" style="background-color: #FF9933">
+                    <table cellpadding="0" cellspacing="0" class="auto-style2" style="text-align: center">
+                        <tr>
+                            <td>
+                                <asp:Button ID="btnHome" runat="server" BackColor="#FF9933" BorderColor="#FF9933" Font-Bold="True" Font-Size="12pt" ForeColor="Black" OnClick="btnHome_Click" Text="Home" />
+                            </td>
+                            <td>
+                                <asp:Button ID="btnRegistration" runat="server" BackColor="#FF9933" BorderColor="#FF9933" Font-Bold="True" Font-Size="12pt" ForeColor="Black" Text="Registration" PostBackUrl="~/General_User/Registration.aspx"  />
+                            </td>
+                            <td>
+                                <asp:Button ID="btnLogIn" runat="server" BackColor="#FF9933" BorderColor="#FF9933" Font-Bold="True" Font-Size="12pt" ForeColor="Black" Text="Log In" PostBackUrl="~/General_User/LogIn.aspx" />
+                            </td>
+                            <td>
+                                <asp:Button ID="btnCrimeInformation" runat="server" BackColor="#FF9933" BorderColor="#FF9933" Font-Bold="True" Font-Size="12pt" ForeColor="Black" Text="Crime Information" OnClick="btnCrimeInformation_Click" />
+                            </td>
+                            <td>
+                                <asp:Button ID="btnMissingPerson" runat="server" BackColor="#FF9933" BorderColor="#FF9933" Font-Bold="True" Font-Size="12pt" ForeColor="Black" Text="Missing Persons" OnClick="btnMissingPerson_Click" />
+                            </td>
+                            <td>
+                                <asp:Button ID="btnMostWanted" runat="server" BackColor="#FF9933" BorderColor="#FF9933" Font-Bold="True" Font-Size="12pt" ForeColor="Black" Text="Most Wanted Criminals" OnClick="btnMostWanted_Click" />
+                            </td>
+                            <td>
+                                <asp:Button ID="btnAboutUs" runat="server" BackColor="#FF9933" BorderColor="#FF9933" Font-Bold="True" Font-Size="12pt" ForeColor="Black" Text="About Us" OnClick="btnAboutUs_Click" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style4" style="background-color: #808080">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,121 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Police.master.cs" Inherits="Police_User_Police" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            background-color: #FFFFFF;
+        }
+        .auto-style2 {
+            width: 292px;
+        }
+        .auto-style3 {
+            width: 932px;
+        }
+        .auto-style4 {
+            height: 22px;
+        }
+        .auto-style5 {
+            width: 100%;
+        }
+        .auto-style6 {
+            height: 473px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" class="auto-style1">
+            <tr>
+                <td>
+                    <table cellpadding="0" cellspacing="0" class="auto-style1">
+                        <tr>
+                            <td class="auto-style2">
+                                <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/Picture/IMG-20240402-WA0007.jpg" Width="300px" />
+                            </td>
+                            <td>
+                                <table cellpadding="0" cellspacing="0" class="auto-style1">
+                                    <tr>
+                                        <td class="auto-style3" style="text-align: center">
+                                            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="20pt" ForeColor="#003A75" Text="POLICE CRIME PREVENTION INITIATIVES" Font-Underline="True"></asp:Label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style3" style="text-align: center">
+                                            <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="#4980B1" Text="ONLINE CRIME REPORT PORTAL"></asp:Label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td style="text-align: right">
+                                <asp:Image ID="Image2" runat="server" Height="152px" ImageUrl="~/Picture/IMG-20240402-WA0006.jpg" Width="207px" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style4">
+                    <table cellpadding="0" cellspacing="0" class="auto-style5">
+                        <tr>
+                            <td style="text-align: center; background-color: #2D5986;">
+                                <asp:Button ID="btnHome" runat="server" BackColor="#2D5986" BorderColor="#2D5986" BorderWidth="2px" Font-Size="15pt" ForeColor="White" Text="Home" OnClick="btnHome_Click"  />
+                            </td>
+                            <td style="text-align: center; background-color: #2D5986;">
+                                <asp:DropDownList ID="ddlAdd" runat="server" AutoPostBack="True" BackColor="#2D5986" Font-Size="15pt" ForeColor="White" Height="21px" Width="253px">
+                                    <asp:ListItem>--Add--</asp:ListItem>
+                                    <asp:ListItem>Add Crime</asp:ListItem>
+                                    <asp:ListItem>Add Criminal</asp:ListItem>
+                                    <asp:ListItem>Add News</asp:ListItem>
+                                    <asp:ListItem>Add Most Wanted</asp:ListItem>
+                                    <asp:ListItem>Add Missing Person</asp:ListItem>
+                                    <asp:ListItem>Add Crime Information</asp:ListItem>
+                                    <asp:ListItem>Add FAQ Answer</asp:ListItem>
+                                </asp:DropDownList>
+                            </td>
+                            <td style="text-align: center; background-color: #2D5986;">
+                                <asp:DropDownList ID="ddlFIR" runat="server" AutoPostBack="True" BackColor="#2D5986" Font-Size="15pt" ForeColor="White" Height="39px" Width="184px">
+                                    <asp:ListItem>FIR</asp:ListItem>
+                                    <asp:ListItem>Add FIR</asp:ListItem>
+                                    <asp:ListItem>Show FIR</asp:ListItem>
+                                    <asp:ListItem>Update FIR Status</asp:ListItem>
+                                </asp:DropDownList>
+                            </td>
+                            <td style="text-align: center; background-color: #2D5986;">
+                                <asp:Button ID="btnRules" runat="server" BackColor="#2D5986" BorderColor="#2D5986" BorderWidth="0px" Font-Size="15pt" ForeColor="White" Text="Rules and IPC" OnClick="btnRules_Click" />
+                            </td>
+                            <td style="text-align: center; background-color: #2D5986;">
+                                <asp:Button ID="btnLogOut" runat="server" BackColor="#2D5986" BorderColor="#2D5986" BorderWidth="0px" Font-Size="15pt" ForeColor="White" Text="Log Out" OnClick="btnLogOut_Click" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style6">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
